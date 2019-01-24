@@ -27,3 +27,18 @@ augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax
 augroup END
+
+" General settings
+set tabstop=2           " Render TABs using this many spaces.
+set shiftwidth=2        " Indentation amount for < and > commands.
+set ignorecase          " Make searching case insensitive
+set smartcase           " ... unless the query has capital letters.
+
+" Sass settings
+augroup sass_settings
+    au!
+    autocmd BufReadPost *.scss  set filetype=sass	" Set the filetype to sass if it's a *.scss file
+    " Fold between braces
+    autocmd Filetype sass setlocal foldmethod=marker
+    autocmd Filetype sass setlocal foldmarker={,}
+augroup END
