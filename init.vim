@@ -31,6 +31,7 @@ augroup END
 " General settings
 set tabstop=2           " Render TABs using this many spaces.
 set shiftwidth=2        " Indentation amount for < and > commands.
+set expandtab        	" Spaces
 set ignorecase          " Make searching case insensitive
 set smartcase           " ... unless the query has capital letters.
 
