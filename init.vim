@@ -35,6 +35,9 @@ set expandtab        	" Spaces
 set ignorecase          " Make searching case insensitive
 set smartcase           " ... unless the query has capital letters.
 
+set breakindent
+set showbreak=>> 
+
 " Sass settings
 augroup sass_settings
     au!
