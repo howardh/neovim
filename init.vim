@@ -9,6 +9,7 @@ Plug 'zefei/vim-wintabs-powerline'
 " Folding
 Plug 'tmhedberg/SimpylFold'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 
 " Autocomplete
 Plug 'Shougo/deoplete.nvim'
