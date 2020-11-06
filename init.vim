@@ -1,7 +1,5 @@
 filetype plugin on
-
-call plug#begin('~/.vim/plugged')
-
+call plug#begin('~/.vim/plugged') 
 " Buffer management
 Plug 'zefei/vim-wintabs'
 Plug 'zefei/vim-wintabs-powerline'
@@ -35,6 +33,15 @@ set shiftwidth=2        " Indentation amount for < and > commands.
 set expandtab        	" Spaces
 set ignorecase          " Make searching case insensitive
 set smartcase           " ... unless the query has capital letters.
+set ssop-=curdir
+set ssop+=sesdir
+set splitbelow " Open new horizontal splits below current split
+set splitright " Open new vertical splits to the right of current split
+
+inoremap <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
 
 set breakindent
 set showbreak=>> 
