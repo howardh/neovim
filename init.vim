@@ -18,6 +18,9 @@ Plug 'vim-ctrlspace/vim-ctrlspace'
 " Tab line
 Plug 'vim-airline/vim-airline'
 
+" NerdTree
+Plug 'preservim/nerdtree'
+
 call plug#end()
 
 " vim-javascript
