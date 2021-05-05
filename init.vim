@@ -1,8 +1,5 @@
 filetype plugin on
 call plug#begin('~/.vim/plugged') 
-" Buffer management
-Plug 'zefei/vim-wintabs'
-Plug 'zefei/vim-wintabs-powerline'
 
 " Folding
 Plug 'tmhedberg/SimpylFold'
@@ -15,13 +12,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Search/Replace
 Plug 'skwp/greplace.vim'
 
+" Ctrlspace
+Plug 'vim-ctrlspace/vim-ctrlspace'
+
+" Tab line
+Plug 'vim-airline/vim-airline'
+
 call plug#end()
-
-" Deoplete
-let g:deoplete#enable_at_startup = 1
-
-" Wintabs
-let g:wintabs_display = 'statusline'
 
 " vim-javascript
 augroup javascript_folding
@@ -56,6 +53,12 @@ augroup sass_settings
     autocmd Filetype sass setlocal foldmethod=marker
     autocmd Filetype sass setlocal foldmarker={,}
 augroup END
+
+" Ctrlspace settings
+set nocompatible
+set hidden
+set encoding=utf-8
+let g:CtrlSpaceDefaultMappingKey = "<C-space> "
 
 " CoC Settings
 " Use `ctrl-j` and `ctrl-k` to navigate diagnostics
