@@ -10,8 +10,10 @@ Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 
 " Autocomplete
-Plug 'Shougo/deoplete.nvim'
-Plug 'zchee/deoplete-jedi'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Search/Replace
+Plug 'skwp/greplace.vim'
 
 call plug#end()
 
@@ -54,3 +56,17 @@ augroup sass_settings
     autocmd Filetype sass setlocal foldmethod=marker
     autocmd Filetype sass setlocal foldmarker={,}
 augroup END
+
+" CoC Settings
+" Use `ctrl-j` and `ctrl-k` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> <c-k> <Plug>(coc-diagnostic-prev)
+nmap <silent> <c-j> <Plug>(coc-diagnostic-next)
+" 235 = grey15 (see https://jonasjacek.github.io/colors/)
+hi Pmenu ctermbg=235 ctermfg=white
+
+" Go to definition with `gd`
+nmap <silent> <leader>gdd <Plug>(coc-definition)
+nmap <silent> <leader>gdt * :call CocAction('jumpDefinition', 'tabe')<CR>
+nmap <silent> <leader>gdv * :call CocAction('jumpDefinition', 'vsplit')<CR>
+nmap <silent> <leader>gds * :call CocAction('jumpDefinition', 'split')<CR>

@@ -8,3 +8,12 @@
 
 Misc config:
 * Add `set -sg escape-time 0` to `.tmux.conf`
+* Install coc extensions
+  * `:CocInstall coc-pyright` for python
+
+Install new plugins, update, and clear removed plugins
+```
+:PlugInstall
+:PlugUpdate
+:PlugClean
+```
