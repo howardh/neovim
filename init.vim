@@ -6,19 +6,11 @@ Plug 'tmhedberg/SimpylFold'
 Plug 'pangloss/vim-javascript'
 Plug 'maxmellon/vim-jsx-pretty'
 
-" Autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-" Search/Replace
-Plug 'skwp/greplace.vim'
-
-" Ctrlspace
+" Misc
+Plug 'neoclide/coc.nvim', {'branch': 'release'} " Autocomplete
+Plug 'skwp/greplace.vim' " Search/Replace
 Plug 'vim-ctrlspace/vim-ctrlspace'
-
-" Tab line
-Plug 'vim-airline/vim-airline'
-
-" NerdTree
+Plug 'vim-airline/vim-airline' " Tab line
 Plug 'preservim/nerdtree'
 
 call plug#end()
