@@ -17,3 +17,8 @@ Install new plugins, update, and clear removed plugins
 :PlugUpdate
 :PlugClean
 ```
+
+Setup Copilot
+```
+:Copilot setup
+```

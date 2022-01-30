@@ -12,6 +12,8 @@ Plug 'skwp/greplace.vim' " Search/Replace
 Plug 'vim-ctrlspace/vim-ctrlspace'
 Plug 'vim-airline/vim-airline' " Tab line
 Plug 'preservim/nerdtree'
+Plug 'kkoomen/vim-doge', { 'do': { -> doge#install() } }
+Plug 'github/copilot.vim'
 
 call plug#end()
 
