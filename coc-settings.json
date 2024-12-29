@@ -3,5 +3,6 @@
   "diagnostic.warningSign": "⚠",
   "diagnostic.infoSign": "○",
   "diagnostic.hintSign": "",
-  "diagnostic.level": "hint"
+  "diagnostic.level": "hint",
+  "inlayHint.enable": false
 }
