@@ -68,6 +68,13 @@ hi Pmenu ctermbg=235 ctermfg=white
 " <C-g>u breaks current undo, please make your own choice
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" Extensions
+let g:coc_global_extensions = [
+            \ 'coc-pyright',
+            \ 'coc-json',
+            \ 'coc-html',
+            \ 'coc-css',
+            \ ]
 
 " Go to definition with `gd`
 nmap <silent> <leader>gdd <Plug>(coc-definition)
