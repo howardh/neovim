@@ -4,5 +4,6 @@
   "diagnostic.infoSign": "○",
   "diagnostic.hintSign": "",
   "diagnostic.level": "hint",
-  "inlayHint.enable": false
+  "inlayHint.enable": false,
+  "rust-analyzer.server.path": "/usr/lib/rustup/bin/rust-analyzer"
 }

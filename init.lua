@@ -79,3 +79,7 @@ vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { noremap = t
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { noremap = true })
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { noremap = true })
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { noremap = true })
+
+-- Copilot settings
+-- Disable by default. It can be re-enabled as needed with `:Copilot enable`.
+vim.g.copilot_enabled = false
