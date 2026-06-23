@@ -15,7 +15,7 @@ Plug('skwp/greplace.vim') -- Search/Replace
 --Plug('vim-ctrlspace/vim-ctrlspace')
 Plug('vim-airline/vim-airline') -- Tab line
 Plug('preservim/nerdtree')
-Plug('github/copilot.vim')
+Plug('github/copilot.vim', { ['on'] = 'Copilot' })
 
 Plug('nvim-lua/plenary.nvim') -- Telescope dependency
 Plug('nvim-telescope/telescope.nvim', { ['branch'] = '0.1.x' }) -- Fuzzy finder
