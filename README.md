@@ -1,6 +1,9 @@
 # Setup
 
 * Clone this repository to `~/.config/nvim` (Linux) or `%appdata%/Local/nvim` (Windows)
+  ```
+  git clone git@github.com:howardh/neovim.git ~/.config/nvim
+  ```
 * Install vim-plug (https://github.com/junegunn/vim-plug)
 * Install neovim with pip3
   * Ensure that `:echo has("python3")` returns `1`
